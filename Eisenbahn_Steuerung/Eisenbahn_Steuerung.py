@@ -16,7 +16,7 @@ start = 0
 end = 0
 # Start und Endp
 # Punkt des Zuges bestimmen
-destination = get_start_end(start, end, bahnhof)
+destination = get_start_end()
 
 for i in range(2):
     print()

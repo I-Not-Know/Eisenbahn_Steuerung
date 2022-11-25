@@ -1,23 +1,6 @@
-def get_start_end(start, end, bahnhof):
-    correct = False
-    while correct == False:
-        print("Geben Sie den Startpunkt an:")
-        start = int(input()) - 1;
-        if start < len(bahnhof) and start >= 0:
-            correct = True
-            start = start + 1
-        else:
-            print('Out of bound')
+from server import get_position_from_pc
 
-    # Eingabe des Zieles
-    correct = False
-    while correct == False:
-        print("Geben Sie den Endpunkt an:")
-        end = int(input()) - 1;
-        if end < len(bahnhof) and end >= 0:
-            correct = True
-            end = end + 1
-        else:
-            print('Out of bound')
+def get_start_end():
+    vec_start_end = get_position_from_pc()
 
-    return start, end
+    return vec_start_end[0], vec_start_end[1]
