@@ -12,18 +12,16 @@ bahnhof = ['Bahnhof 1', 'Bahnhof 2', 'Bahnhof 3', 'Bahnhof 4', 'Bahnhof 5', 'Bah
 #print(len(map))
 
 # Variablen
-
-start = 0
-end = 0
+start = 1
+end = 1
 # Start und Endp
 # Punkt des Zuges bestimmen
-destination = get_start_end()
+get_start_end()
 
 for i in range(2):
     print()
 
-print(destination)
-route = get_shortest_path(str(destination[0]), str(destination[1]))
+route = get_shortest_path(str(start), str(end))
 
 route = list(map(int, route))
 print(route)

@@ -6,13 +6,13 @@
 import asyncio
 import websockets
 
-ip_webserver = "localhost"
+ip_webserver = "10.7.7.136"
 
 async def call_server_pos(websocket):
     # Der Server soll alle wichtigen Informationen abfragen
-    await websocket.send("start")
     global start 
     global end 
+    await websocket.send("start")
     start = await websocket.recv()
     await websocket.send("end")
     end = await websocket.recv()
@@ -29,8 +29,8 @@ async def call_server_2(switching_order):
             await asyncio.Future()
 
 def get_position_from_controller():
-    call_server_1()
+    asyncio.run(call_server_1())
 
 def send_switching_order(switching_order):
-    call_server_2(switching_order)
+     asyncio.run(call_server_2(switching_order))
     
