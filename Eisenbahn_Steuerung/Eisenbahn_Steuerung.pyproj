@@ -26,6 +26,7 @@
     <Compile Include="calc_route.py" />
     <Compile Include="change_switch.py" />
     <Compile Include="dijkstra.py" />
+    <Compile Include="server.py" />
     <Compile Include="signalling_station.py" />
     <Compile Include="position.py" />
   </ItemGroup>

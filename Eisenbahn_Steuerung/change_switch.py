@@ -5,7 +5,6 @@ def change_rail_switch(route, bahnhof):
     column = 0
     switching_order = []
     # Switch Grid
-    # Gibt die Reihenfolge an, welche Weichen wie gestellt werden m�ssen
     switch_change = [
                         [13, 14, 23, 27, 31, 32, 35, 41, 42, 45, 56, 62, 78, 83, 87],
                         [1, 1, 3, 3, 7, 7, 7, 7, 7, 7, 0, 0, 0, 5, 5],
