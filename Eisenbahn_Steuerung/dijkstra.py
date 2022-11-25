@@ -1,5 +1,5 @@
 from collections import deque, namedtuple
-# Test
+
 Edge = namedtuple ('Edge', 'start, end, cost')
 def create_edge(start, end, cost):
     return Edge(start, end, cost)
